@@ -1,0 +1,21 @@
+NEXT : I need to make the paint method draw the plot by gettting the closest points in that order, and then draw them in that order. Just using the different plot value references.
+
+Also I need a new far more generic way for adding things to the screen so i can deal with of screen problems
+
+THEN : Next I need to make it so the points which are out of the the bounds of the visual field are drawn to their intersection on the visual plane.
+
+The lines should be drawn as poly lines using this method ->
+	find the equation of the line between two screenX and screenY points
+        then get the inverse if the of the slope. Get the eqn of a line with
+        that slope containing the point (screenWidth/2,screenHeight/2). 
+	Get the intersection of the two lines, and use that dx and dy to 
+	set the number of n points the poly line consists of
+
+        Then write and algorythm to traverse a 3 dimensional line between p1
+        and p2 on a set incrementation. Parameterize line then move t from
+        t0 -> tfinal 
+
+	this will not be efficient, generate all these n points w/o 
+	using the toScreen calculations again 
+
+	If it is off the screen for dx or dy there is no need to paint it`
