@@ -1,8 +1,11 @@
-NEXT : I need to make the paint method draw the plot by gettting the closest points in that order, and then draw them in that order. Just using the different plot value references.
+NEXT : I need to make the paint method draw the plot by gettting the closest points in that order,
+	and then draw them in that order. Just using the different plot value references.
 
-Also I need a new far more generic way for adding things to the screen so i can deal with of screen problems
+Also I need a new far more generic way for adding things to the screen so i can deal with of screen
+	problems
 
-THEN : Next I need to make it so the points which are out of the the bounds of the visual field are drawn to their intersection on the visual plane.
+THEN : Next I need to make it so the points which are out of the the bounds of the visual field are
+	drawn to their intersection on the visual plane.
 
 The lines should be drawn as poly lines using this method ->
 	find the equation of the line between two screenX and screenY points
