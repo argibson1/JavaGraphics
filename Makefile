@@ -5,7 +5,7 @@
 # automatically called when "make" is typed with no arguments 
 
 run: all
-	java TDSmain     
+	java TDSmain $0 $1 $2    
 
 all: Plot.java	Cube.java Point.java ThreeDimensionalSpace.java 
 	javac TDSmain.java
