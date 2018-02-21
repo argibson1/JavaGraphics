@@ -4,10 +4,16 @@
 # target, known as default target, it is the first one so it is 
 # automatically called when "make" is typed with no arguments 
 
+run: all
+	java TDSmain     
+
 all: Plot.java	Cube.java Point.java ThreeDimensionalSpace.java 
 	javac TDSmain.java
-run:
-	java TDSmain
+
+.SUFFIXES: .java .class
+
+.java.class:
+	javac $<
 args:
 	ARGS = $(
 commit:
