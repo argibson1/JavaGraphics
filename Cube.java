@@ -1,16 +1,34 @@
-public class Cube{
+/*  Alexander Gibson
+ *  argibson@ucsd.edu
+ *  
+ *  Cube is a class purposed for generating 8 Points
+ *  and and 6 sides 
+ */
 
+public class Cube{
+  
+  // the center which the cube is generated about
   private Point center = new Point(0,0,0); 
   private Point[] points = new Point[8]; 
   private int side = 0;
 
+  /** Cube constuctor
+   * 
+   *  @param x, y, z, are the coordiantes which will
+   *    become the center of the cube
+   *  @param side is the side length 
+   */
   public Cube(int x, int y, int z, int side){
     center = new Point(x,y,z);
     this.side = side;
     initPoints();
   }
 
-  public void initPoints(){
+  /** initPoints helper method to generate the position
+   *  of all eight different points stored in the 
+   *  Point array "points"
+   */
+  private void initPoints(){
     double x = center.getX();
     double y = center.getY();
     double z = center.getZ();
